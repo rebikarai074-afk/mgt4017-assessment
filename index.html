@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aroma Brew — specialty coffee and tea elevated with the warmth of cardamom.">
+  <title>Aroma Brew | Coffee, Tea & Cardamom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Aroma Brew home"><span class="brand-mark">✳</span><span>Aroma Brew</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#story">Our story</a>
+      <a href="#brewing">Brewing ideas</a><a href="#partnerships">Cafe partners</a>
+    </nav>
+    <button class="cart-button" id="cartButton" aria-label="Open shopping basket">Basket <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">A little warmth in every cup</p>
+        <h1>Where coffee meets<br><em>the warmth of cardamom.</em></h1>
+        <p>Distinctive blends. Unmistakable aroma. Discover premium coffee and tea made for slower, more memorable moments.</p>
+        <a class="button button-light" href="#shop">Explore our blends <span>→</span></a>
+      </div>
+      <div class="hero-note"><span>01 / 03</span><span>Specialty coffee & tea</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="story">
+      <div>
+        <p class="eyebrow">The Aroma Brew difference</p>
+        <h2>A familiar favourite,<br><em>with a fragrant twist.</em></h2>
+      </div>
+      <div class="intro-text">
+        <p>Aroma Brew is an online specialty beverage business born from a love of flavour. We blend premium coffee beans with green and black cardamom to create drinks that are smooth, aromatic, and unmistakably different.</p>
+        <p>Alongside our coffee, we offer black tea infused with cardamom and complementary spices such as cinnamon, ginger, and lemon. Every blend is crafted for a warmer aroma, a richer taste, and a moment of everyday indulgence.</p>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Find your favourite</p><h2>Shop the collection</h2></div>
+          <p>Thoughtful blends for your daily ritual, a thoughtful gift, or your next café menu.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="coffee">Coffee</button>
+          <button class="filter" data-filter="tea">Tea</button>
+          <button class="filter" data-filter="gift">Gift sets</button>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="coffee">
+            <div class="product-image coffee-image"><span class="product-tag">Bestseller</span></div>
+            <div class="product-info"><div><h3>Cardamom House Coffee</h3><p>Rich, smooth coffee with a gentle cardamom finish.</p></div><strong>£12.50</strong></div>
+            <button class="add-button" data-name="Cardamom House Coffee" data-price="12.50">Add to basket <span>+</span></button>
+          </article>
+          <article class="product-card" data-category="tea">
+            <div class="product-image tea-image"></div>
+            <div class="product-info"><div><h3>Cardamom Black Tea</h3><p>Full-bodied black tea with warming spice notes.</p></div><strong>£8.50</strong></div>
+            <button class="add-button" data-name="Cardamom Black Tea" data-price="8.50">Add to basket <span>+</span></button>
+          </article>
+          <article class="product-card" data-category="coffee">
+            <div class="product-image beans-image"></div>
+            <div class="product-info"><div><h3>Green Cardamom Blend</h3><p>Premium beans paired with fragrant green cardamom.</p></div><strong>£13.00</strong></div>
+            <button class="add-button" data-name="Green Cardamom Blend" data-price="13.00">Add to basket <span>+</span></button>
+          </article>
+          <article class="product-card" data-category="gift">
+            <div class="product-image gift-image"><span class="product-tag">Made for sharing</span></div>
+            <div class="product-info"><div><h3>The Warm Welcome Gift Set</h3><p>A coffee and tea pairing for curious flavour lovers.</p></div><strong>£24.00</strong></div>
+            <button class="add-button" data-name="The Warm Welcome Gift Set" data-price="24.00">Add to basket <span>+</span></button>
+          </article>
+        </div>
+        <p class="demo-note">Product names, descriptions and prices are sample content for this website prototype. Update them before taking real orders.</p>
+      </div>
+    </section>
+
+    <section class="subscription section-wrap">
+      <div class="subscription-image"></div>
+      <div class="subscription-copy">
+        <p class="eyebrow">Your ritual, delivered</p>
+        <h2>A little Aroma,<br><em>on repeat.</em></h2>
+        <p>Keep your cupboard stocked with a regular delivery of your favourite blends. Choose a monthly or fortnightly delivery to suit your routine.</p>
+        <a class="button button-dark" href="#contact">Ask about subscriptions <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="journal" id="brewing">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Learn, brew, enjoy</p><h2>Brewing blogs & ideas</h2></div>
+          <p>Small tips to help you get more from every cup.</p>
+        </div>
+        <div class="journal-grid">
+          <article class="journal-card"><div class="journal-photo journal-one"></div><p class="eyebrow">Brew guide · 4 min read</p><h3>How to make cardamom coffee at home</h3><p>Bring out the aroma with a simple, balanced brewing routine.</p></article>
+          <article class="journal-card"><div class="journal-photo journal-two"></div><p class="eyebrow">Tea notes · 3 min read</p><h3>A warming cup of spiced black tea</h3><p>Explore how cardamom, ginger and cinnamon complement black tea.</p></article>
+          <article class="journal-card"><div class="journal-photo journal-three"></div><p class="eyebrow">Ingredients · 5 min read</p><h3>Green or black cardamom?</h3><p>Discover the different aromas and ways to use these distinctive spices.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-section" id="partnerships">
+      <div class="partner-copy">
+        <p class="eyebrow">For independent cafés</p>
+        <h2>Bring a new aroma<br><em>to your menu.</em></h2>
+        <p>We would love to hear from cafés, restaurants and hospitality businesses interested in serving distinctive cardamom coffee and tea.</p>
+        <a class="button button-light" href="#contact">Explore café partnerships <span>→</span></a>
+      </div>
+      <div class="partner-photo"></div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div><p class="eyebrow">Let's talk</p><h2>Have a question?<br><em>We'd love to hear.</em></h2><p>Send us a message about products, subscriptions or café partnerships.</p></div>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Your name</label><input id="name" name="name" required placeholder="Name">
+        <label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com">
+        <label for="topic">I'm interested in</label><select id="topic" name="topic"><option>General enquiry</option><option>Products</option><option>Subscription</option><option>Café partnership</option></select>
+        <label for="message">Message</label><textarea id="message" name="message" rows="4" required placeholder="How can we help?"></textarea>
+        <button class="button button-dark" type="submit">Prepare email <span>→</span></button>
+        <p class="form-note" id="formNote">This prototype opens your email app; connect a form service for online submissions.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="#home"><span class="brand-mark">✳</span><span>Aroma Brew</span></a>
+    <p>Specialty coffee and tea, elevated by cardamom.</p>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="#brewing">Brewing ideas</a><a href="#contact">Contact</a></div>
+    <small>© <span id="year"></span> Aroma Brew. Website prototype.</small>
+  </footer>
+
+  <div class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header"><h2>Your basket</h2><button id="closeCart" aria-label="Close basket">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Your basket is empty.</p></div>
+    <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">£0.00</strong></div>
+    <p class="cart-help">Demo basket only — checkout and payments are not connected.</p>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
